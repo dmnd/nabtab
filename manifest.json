@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "nabtab",
+  "description": "Forces NAB internet banking to open in a tab",
+  "version": "1.0",
+  "author": "Desmond Brand",
+  "homepage_url": "https://github.com/dmnd/nabtab",
+
+  "permissions": [
+    "http://www.nab.com.au/"
+  ],
+  "content_scripts": [{
+    "matches": [
+      "http://www.nab.com.au/*"
+    ],
+    "js": ["nabtab.js"]
+  }]
+}
